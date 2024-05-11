@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoreValues Gym</title>
+    <!-- the style shhet -->
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="../core.css">
+    <!-- the icon -->
+    <link rel="icon" href="../images/core.png">
+    <!-- || FONT AWSOME LIBARAY FOR ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body class="form__body">
+    <div class="warn hiddenl"><i class="fa-solid fa-xmark wran_icon"></i>
+        <p class="warn__p"></p>
+        <button class="warn__btn">Try Again</button>
+    </div>
+    <div class=" hiddenl to_login"><i class="fa-solid fa-check Check_icon"></i>
+        <p class="to_login__p">Successfully Signed Up.</p>
+        <button class="to_login__btn">LogIn Now</button>
+    </div>
+    <header class="header__div">
+        <div class="container">
+            <div class="img__div">
+                <a href="../core.html">
+                    <img src="../images/core2.png" alt="CoreValues Gym">
+                </a>
+            </div>
+            <ul class="header__ul">
+                <li><a href="../core.html#about">About</a></li>
+                <li><a href="../core.html#features">Features</a></li>
+                <li><a href="./core.html#Prices">Prices</a></li>
+            </ul>
+            <button class="header__icon">
+                <div class="header__menu"></div></i>
+            </button>
+        </div>
+    </header>
+    <aside class="aside">
+        <nav>
+            <div class="aside__head aside__ele">
+                <h4 class="h4__aside">Menu</h4>
+                <button class="close_aside"></button>
+            </div>
+            <ul class="aside__ul">
+                <li class="aside__ele "><a href="#about">About</a></li>
+                <li class="aside__ele "><a href="#features">Features</a></li>
+                <li class="aside__ele "><a href="#Prices">Prices</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <div class="overlay hiddenl"></div>
+
+    <form class="form hidden sing-up__form">
+        <p class="title">Sign up</p>
+        <div class="Form__username">
+            <label>
+                <input placeholder="" type="text" class="input" id="fName">
+                <span>Firstname</span>
+            </label>
+
+            <label>
+                <input placeholder="" type="text" class="input" id="lName">
+                <span>Lastname</span>
+            </label>
+        </div>
+        <label>
+            <input placeholder="" type="tel" class="input" pattern="[0-9]{11}" id="phnone">
+            <span>Phone Number</span>
+        </label>
+        <label>
+            <input placeholder="" type="password" class="input" id="pass">
+            <span>Password</span>
+        </label>
+        <label>
+            <input placeholder="" type="password" class="input" id="cPass">
+            <span>Confirm password</span>
+        </label>
+        <button class="submit signUpBtn" type="submit">Sign Up</button>
+        <p class="signin">Already have an acount ? <button class="log__btns signin_btn">Sign in</button> </p>
+    </form>
+
+    <form class="form sing-in__form">
+        <p class="title">Sign In</p>
+        <label>
+            <input placeholder="" type="tel" class="input" pattern="[0-9]{11}" id="phone">
+            <span>Phone Number</span>
+        </label>
+        <label>
+            <input placeholder="" type="password" class="input" id="password">
+            <span>Password</span>
+        </label>
+        <button class="submit singInBtn">Log In</button>
+        <p class="signin">Don't have an account?
+            <button class="log__btns">Sign up</button>
+        </p>
+    </form>
+    <script src="form.js"></script>
+</body>
+
+</html>

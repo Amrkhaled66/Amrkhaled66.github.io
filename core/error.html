@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoreValues Gym</title>
+    <!-- the style shhet -->
+    <link rel="stylesheet" href="../core.css">
+    <!-- <link rel="stylesheet" href="./error.css"> -->
+    <!-- the icon -->
+    <link rel="icon" href="../images/core.png">
+    <!-- <script defer src="error.js"></script> -->
+    <style>
+        .error__body {
+            background-color: black;
+            position: relative;
+            height: 100vh;
+        }
+
+        :root {
+            --FF: "Montserrat", sans-serif;
+
+            /* ||COLORS */
+            --main--color: #fd5c63;
+            --secondry--color: #960018;
+            --third--color: #b3282d;
+        }
+
+        @media (max-width: 768px) {
+            .error_div {
+                font-size: 8px;
+            }
+        }
+
+        .error_div {
+            position: absolute;
+            top: 30%;
+            transform: translateY(-50%);
+            left: 50%;
+            transform: translateX(-50%);
+            width: 25em;
+            min-width: 200px;
+            height: auto;
+            min-height: 200px;
+            color: whitesmoke;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .erorr__h1 {
+            font-size: 9em;
+            position: relative;
+            width: 100%;
+        }
+
+        .erorr__h1::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 15px;
+            background-color: whitesmoke;
+            bottom: -10%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .error__btn {
+            width: fit-content;
+            background-color: red;
+            padding: 15px 20px;
+            border-radius: 15px;
+            font-size: calc(1em +10px);
+            font-weight: 600;
+            transition: 1s;
+            margin-top: 50px;
+        }
+
+        .error__btn:hover {
+            background-color: rgb(159, 3, 3);
+        }
+    </style>
+</head>
+
+<body class="error__body">
+    <header class="header__div">
+        <div class="container">
+            <div class="img__div">
+                <img src="../images/core2.png" alt="CoreValues Gym">
+            </div>
+            <ul class="header__ul">
+                <li><a href="../core.html#about">About</a></li>
+                <li><a href="../core.html#features">Features</a></li>
+                <li><a href="../core.html#Prices">Prices</a></li>
+                <li><a href="../form/form.html">LogIn</a></li>
+            </ul>
+            <button class="header__icon">
+                <div class="header__menu"></div></i>
+            </button>
+        </div>
+    </header>
+    <aside class="aside">
+        <nav>
+            <div class="aside__head aside__ele">
+                <h4 class="h4__aside">Menu</h4>
+                <button class="close_aside"></button>
+            </div>
+            <ul class="aside__ul">
+                <li class="aside__ele "><a href="../core.html#about">About</a></li>
+                <li class="aside__ele "><a href="../core.html#Prices">Features</a></li>
+                <li class="aside__ele "><a href="../core.html#Prices">Prices</a></li>
+                <li><a href="../form/form.html">LogIn</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <div class="overlay hidden"></div>
+    <div class="error_div">
+        <h1 class="erorr__h1">404</h1>
+        <button class="error__btn">
+            <a href="../core.html">Go to Homepage</a>
+        </button>
+    </div>
+    <script>// =============================== show and clode the aside ===============================
+        //  show aside
+        const menu_btn = document.querySelector(".header__icon");
+        const aside = document.querySelector(".aside");
+        const overlay = document.querySelector(".overlay");
+
+        const showmenu = function () {
+            aside.style.width = "55%";
+            overlay.classList.remove("hidden");
+        };
+        menu_btn.addEventListener("click", showmenu);
+
+        //  close aside
+        const close_aside = document.querySelector(".close_aside");
+        const closeAside = function () {
+            aside.style.width = "0";
+            overlay.classList.add("hidden");
+        };
+        close_aside.addEventListener("click", closeAside);
+        console.log("dasf");</script>
+</body>
+
+</html>
